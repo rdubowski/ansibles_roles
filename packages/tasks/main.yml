@@ -1,10 +1,6 @@
----
-- name: Install net tools
+- name: Install packages
   package:
-    name: " {{ item }}"
+    name:
+      - unzip
+      - net-tools
     state: present
-  loop:
-    - net-tools
-    - unzip
-
-# tasks file for packages
